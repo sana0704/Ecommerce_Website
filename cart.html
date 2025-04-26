@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Orders</title>
+    <style>
+        .cartItem-display{
+            display: flex;
+            gap: 30px;
+            margin-top: 70px;
+        }
+.div1{
+    height: 800px;
+    width: 70%;
+    border: 2px solid greenyellow;
+}
+
+        .side-advertisement{
+            /* border: 2px solid red; */
+            height: 650px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+            & .boxes{
+                /* border: 2px solid blue; */
+                height: 400px;
+                aspect-ratio: 1;
+                /* overflow: hidden; */
+              
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <div
+          style="
+            background-color: #fcb454;
+            height: 50px;
+            width: 300px;
+            text-align: center;
+          "
+        >
+          <h2
+            style="
+              padding-top: 10px;
+              color: #123458;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              font-weight: bolder;
+            "
+          >
+            Your Orders
+          </h2>
+          <button style="height: 40px;width: 200px;border-radius: 20px;background-color: #fcb454;color: #123458;"><a href="./index.html" style="text-decoration: none;">Add More Items</a></button>
+        </div>
+      </nav>
+    </section>
+
+<section class="cartItem-display">
+    <div class="div1">
+        <h3>Order History</h3>
+<p class="priceToDisplay" style="border: 2px solid green; height: 50px; width: 100px;"></p>
+    </div>
+
+    <div class="side-advertisement">
+
+        <div class="boxes">
+            <video src="./images/manbuyer.mp4" height="400px" width="400px"  style="border-radius: 20px;" loop controls></video> 
+        </div>
+
+       
+      
+        
+    </div>
+</section>
+
+<script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApniDukaan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section>
+    <nav class="navbar navbar-expand-lg" id="mynav"> 
+        <div class="container-fluid" id="nav-sec">
+          <a class="navbar-brand" href="#">Apni-Dukan.Com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cart.html">Cart</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Discounts
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">On Mobiles</a></li>
+                  <li><a class="dropdown-item" href="#">On Laptops</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">On Tv's</a></li>
+                </ul>
+              </li>
+          
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" id="btn1" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</section>
+
+<section id="heroContainer" >
+
+<div class="hero-content">
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/camera-1248682_1280.jpg" class="d-block" alt="..." height="500px" width="775px">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/dressshop2.jpg" class="d-block" alt="..." height="500px" width="775px"> 
+      </div>
+      <div class="carousel-item">
+        <img src="./images/sofa.jpg" class="d-block" alt="..." height="500px" width="775px">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+      <div class="vedio">
+        <p class="para"><span>Sale is live</span></p>
+        <p class="para">Shop Your Summer ESsentials Now</p>
+        <video src="./images/5585943-hd_1920_1080_25fps.mp4" height="300px" width="500px" autoplay loop controls></video>
+        <p class="para">Grab Your Deals at 60% Offf.....</p>
+      </div>
+</section>
+
+<!-- products categories display -->
+<h3 style="margin-left: 40px; margin-top: 20px;" >New Arrivals...</h3>
+<section id="product-display" style="background-color: #C7D9DD;">
+
+      <div class="card" style="width: 18rem;">
+        <img src="./images/smartphone-8034911_1280.jpg" class="card-img-top" alt="..." class="img-hov">
+        <div class="card-body">
+          <h5 class="card-title">SmartPhones <br>Samsung,Apple,Micromax,Redmi11..etc</h5>
+          <p class="card-text">Starting From 12999/- only</p>
+          <p class="priceofProduct">"12345"</p>
+          <a href="./cart.html" id="addToCartLink" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="./images/ipad-4080481_1280.png" class="card-img-top" alt="..." class="img-hov">
+        <div class="card-body"> 
+          <h5 class="card-title">iPad</h5>
+          <p class="card-text">Price Drop Alert!!!</p>
+          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="./images/3d-cartoon-background-children.jpg" class="card-img-top" alt="..."  class="img-hov">
+        <div class="card-body">
+          <h5 class="card-title">Toys , Scientific Games , Puzzles , Blocks and Many More To Explore!!!</h5>
+          <p class="card-text">0-5yrs. <br>Starting From 200/-</p>
+          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+                </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="./images/washing-machine-minimal-laundry-room-interior-design.jpg" class="card-img-top" alt="..." class="img-hov">
+        <div class="card-body">
+          <h5 class="card-title">Washing Machine</h5>
+          <p class="card-text">Samsung ,LG and More... <br>Save Time , Save Money</p>
+          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="./images/camera-1248682_1280.jpg" class="card-img-top" alt="..." class="img-hov">
+        <div class="card-body">
+          <h5 class="card-title">HD-Cameras</h5>
+          <p class="card-text">Make Your Moment Special... <br>Starting From 10000/-</p>
+          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="./images/flat-lay-wall-clock-still-life.jpg" class="card-img-top" alt="..." class="img-hov">
+        <div class="card-body">
+          <h5 class="card-title">Wall Clock</h5>
+          <p class="card-text">Starting From 599/- only.</p>
+          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="./images/hair-care-4541744_1280.jpg" class="card-img-top" alt="..." class="img-hov">
+        <div class="card-body">
+          <h5 class="card-title">Hair Care</h5>
+          <p class="card-text">Add more into your personnel space<br> Starting From 299/- only.</p>
+          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="./images/kid-6620283_1280.jpg" class="card-img-top" alt="..." class="img-hov" height="300px">
+        <div class="card-body">
+          <h5 class="card-title">Kid's Wear</h5>
+          <p class="card-text">Give Your Baby Your Personnel Touch</p>
+          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+        </div>
+      </div>
+</section>
+
+<section id="top-selling" class="mt-4">
+
+  <h3 style="margin-left: 40px;">Products Based  On Your Recent Researches</h3>
+
+  <div id="recentproducts" class="mt-4">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <img src="./images/bed.jpg" alt="">
+      <h5 class="card-title">Bedsheets</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Furnishing Deals</h6>
+      <!-- <a href="#" class="card-link">Card link</a> -->
+      <a href="#" class="card-link">Show More</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <img src="./images/tv.jpg" alt="">
+      <h5 class="card-title">Tv's</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Min 40% off</h6>
+      <p class="card-text">Deals Like Never Before</p>
+      <!-- <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a> -->
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <img src="./images/flight.jpg" alt="">
+      <h5 class="card-title">Book Flights</h5>
+      <h3 class="card-subtitle mb-2 text-body-secondary">Fly for Rs.1299</h3>
+      <button class="btn1">Book Now</button>
+    </div>
+
+
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <img src="./images/sofa.jpg" alt="">
+      <h5 class="card-title">Sofa</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">From Rs. 17893</h6>
+      <p class="card-text">Flipkart Perfect Home Sofas.</p>
+      <!-- <a href="#" class="card-link">Card link</a> -->
+      <!-- <a href="#" class="card-link">Another link</a> -->
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="more-categories">
+  <h3 style="margin-left: 40px;">More Categories To Explore</h3>
+
+  <div id="more-category">
+    
+<div class="box">
+  <img src="./images/dreeshop.jpg" alt="">
+</div>
+<div class="box">
+  <img src="./images/dressshop2.jpg" alt="">
+</div>
+<div class="box">
+  <img src="./images/ethinic.jpg" alt="">
+</div>
+<div class="box">
+  <img src="./images/makeuo.jpg" alt="">
+</div>
+<div class="box">
+  <img src="./images/dreeshop.jpg" alt="">
+</div>
+<div class="box">
+  <img src="./images/dressshop2.jpg" alt="">
+</div>
+<div class="box">
+  <img src="./images/ethinic.jpg" alt="">
+</div>
+<div class="box">
+  <img src="./images/makeuo.jpg" alt="">
+</div>
+  </div>
+</section>
+
+<section id="footer">
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2025 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
