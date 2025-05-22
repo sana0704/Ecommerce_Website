@@ -6,25 +6,162 @@ body{
     
 }
 
-/* Navbar section */
+/* vedio */
 
-#mynav{
-    background-color: #DDA853;
-    color: #183B4E;
+.vedio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #fff8e1, #ffe0b2); /* light warm gradient */
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: center;
 }
 
-#nav-sec{
-    font-size: larger;
-    & a{
-        color: #183B4E;
-        font-weight: bolder;
-    }
+.vedio video {
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 100%;
+  height: auto;
 }
 
-#btn1{
-    background-color: #183B4E;
-    color: #DDA853;
+.para {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  margin: 8px 0;
 }
+
+/*  */
+.para span {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #d32f2f;
+  animation: popInOut 1.5s ease-in-out infinite;
+}
+
+/* Animation keyframes */
+@keyframes popInOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+  60% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+/* Navbar Section */
+
+.navbar-brand {
+  background-color: #EFB700; /* Turmeric yellow shade */
+  color: #211C84;            /* Dark blue text for contrast */
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  background-color: #d9a600; /* Slightly darker on hover */
+  color: #fff;
+}
+
+
+#mynav {
+  background-color: #211C84;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#nav-sec {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+  color: #ddd;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffc107;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.dropdown-item {
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+  color: #211C84;
+}
+
+/* Search Form */
+#btn1 {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+#btn1:hover {
+  background-color: #e0a800;
+}
+
+/* Navbar toggler for small screens */
+.navbar-toggler {
+  border: 1px solid #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+
 /* Hero section */
 #heroContainer{
     /* border: 2px solid green; */
@@ -131,9 +268,165 @@ gap: 30px;
 margin-bottom: 10px;
 }
 
-/* footer */
-#footer{
-    background-color: #DDA853;
-    color: #183B4E;
 
+/* Footer Styles */
+#footer {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 1px solid #ddd;
+}
+
+#footer h5 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#footer .nav-link {
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+#footer .nav-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+#footer form {
+  max-width: 400px;
+}
+
+#footer input[type="email"] {
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#footer .btn {
+  background-color: #f1c40f; /* turmeric yellow */
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#footer .btn:hover {
+  background-color: #e0b90e;
+}
+
+#footer .border-top {
+  border-top: 1px solid #ccc !important;
+}
+
+#footer ul.d-flex li a svg {
+  fill: #555;
+  transition: fill 0.3s ease;
+}
+
+#footer ul.d-flex li a:hover svg {
+  fill: #f1c40f; /* turmeric yellow on hover */
+}
+
+#footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  #footer .row {
+    text-align: center;
+  }
+
+  #footer .col-md-5.offset-md-1 {
+    margin-top: 2rem;
+  }
+}
+
+
+
+
+/* Flight Booking Container */
+.booking-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.booking-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #211C84;
+}
+
+/* Form styling */
+.booking-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  outline: none;
+  border-color: #211C84;
+}
+
+/* Button */
+.booking-form button {
+  background-color: #211C84;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.booking-form button:hover {
+  background-color: #1a176e;
+}
+
+/* Success message */
+.success-message {
+  text-align: center;
+  background-color: #e6f9ea;
+  border: 1px solid #a6d8af;
+  color: #2e7d32;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .booking-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .booking-form input,
+  .booking-form select {
+    font-size: 14px;
+  }
+
+  .booking-form button {
+    font-size: 14px;
+  }
 }

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flight Booking Summary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Your Flight Booking</h2>
+  <div id="bookingSummary"></div>
+<!-- Booking Form -->
+<div class="booking-container">
+  <h2>Book Your Flight</h2>
+  <form class="booking-form" id="flightForm">
+    <label for="from">From</label>
+    <input type="text" id="from" name="from" placeholder="Enter departure city" required>
+
+    <label for="to">To</label>
+    <input type="text" id="to" name="to" placeholder="Enter destination city" required>
+
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="passengers">Passengers</label>
+    <select id="passengers" name="passengers">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
+
+    <button type="submit">Book Now</button>
+  </form>
+<!-- bootsrap styling used -->
+  <div class="success-message" id="successMessage" style="display: none;">
+    ✅ Your flight has been booked successfully!
+  </div>
+</div>
+  <script>
+
+document.getElementById("flightForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  document.getElementById("successMessage").style.display = "block";
+});
+
+
+    const data = JSON.parse(localStorage.getItem("bookedFlight"));
+    if (data) {
+      document.getElementById("bookingSummary").innerHTML = `
+        <p><strong>From:</strong> ${data.from}</p>
+        <p><strong>To:</strong> ${data.to}</p>
+        <p><strong>Date:</strong> ${data.date}</p>
+        <p><strong>Price:</strong> ₹${data.price}</p>
+      `;
+    // } else {
+    //   document.getElementById("bookingSummary").textContent = "No booking found.";
+    }
+
+
+  </script>
+</body>
+</html>

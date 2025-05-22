@@ -1,15 +1,26 @@
 
-document.addEventListener("DOMContentLoaded", function() {
-    let link = document.getElementById("#addToCartLink");
-    let price = document.querySelector(".priceofProduct");
-    let priceDisplay = document.querySelector(".priceToDisplay");
+  const cartButtons = document.querySelectorAll('.btn-cart');
 
-    const alertMsg = () => {
-        const confirmation = window.confirm("Do you want to add the item?");
-        if (confirmation) {
-            priceDisplay.textContent = price.textContent;
-        }
-    }
+  cartButtons.forEach(button => {
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+      const name = this.getAttribute('data-name');
+      const price = parseFloat(this.getAttribute('data-price'));
 
-    link.addEventListener("click", alertMsg);
-});
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      const existingItem = cart.find(item => item.name === name);
+      if (existingItem) {
+        existingItem.quantity += 1;
+      } else {
+        cart.push({ name, price, quantity: 1 });
+      }
+
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(`${name} added to cart!`);
+    });
+  });
+
+
+
+

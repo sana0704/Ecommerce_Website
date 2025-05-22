@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-</head>
+</head> 
 <body>
     <section>
     <nav class="navbar navbar-expand-lg" id="mynav"> 
@@ -30,10 +30,10 @@
                   Discounts
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">On Mobiles</a></li>
-                  <li><a class="dropdown-item" href="#">On Laptops</a></li>
+                  <li><a class="dropdown-item" href="#drp_mob">On Mobiles</a></li>
+                  <li><a class="dropdown-item" href="#drp_makeup">On Laptops</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">On Tv's</a></li>
+                  <li><a class="dropdown-item" href="#lipstick">On Tv's</a></li>
                 </ul>
               </li>
           
@@ -47,6 +47,7 @@
       </nav>
 </section>
 
+<!-- hero container -->
 <section id="heroContainer" >
 
 <div class="hero-content">
@@ -80,140 +81,155 @@
   </div>
 </div>
 
+    <!-- vedio and sale -->
+
       <div class="vedio">
-        <p class="para"><span>Sale is live</span></p>
-        <p class="para">Shop Your Summer ESsentials Now</p>
-        <video src="./images/5585943-hd_1920_1080_25fps.mp4" height="300px" width="500px" autoplay loop controls></video>
-        <p class="para">Grab Your Deals at 60% Offf.....</p>
-      </div>
-</section>
+  <p class="para"><span>🔥 Sale is Live!</span></p>
+
+  <p class="para">Shop Your Summer Essentials Now</p>
+  <video src="./images/5585943-hd_1920_1080_25fps.mp4" autoplay loop muted controls></video>
+  <p class="para"><strong>💥 Grab Your Deals at 60% Off!</strong></p>
+</div>
+
+</section> 
 
 <!-- products categories display -->
-<h3 style="margin-left: 40px; margin-top: 20px;" >New Arrivals...</h3>
-<section id="product-display" style="background-color: #C7D9DD;">
 
-      <div class="card" style="width: 18rem;">
-        <img src="./images/smartphone-8034911_1280.jpg" class="card-img-top" alt="..." class="img-hov">
-        <div class="card-body">
-          <h5 class="card-title">SmartPhones <br>Samsung,Apple,Micromax,Redmi11..etc</h5>
-          <p class="card-text">Starting From 12999/- only</p>
-          <p class="priceofProduct">"12345"</p>
-          <a href="./cart.html" id="addToCartLink" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
-        </div>
-      </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="./images/ipad-4080481_1280.png" class="card-img-top" alt="..." class="img-hov">
-        <div class="card-body"> 
-          <h5 class="card-title">iPad</h5>
-          <p class="card-text">Price Drop Alert!!!</p>
-          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
-        </div>
-      </div>
+<h3 style="margin-left: 40px; margin-top: 20px;">New Arrivals...</h3>
+<section id="product-display" style="background-color: #C7D9DD;" class="d-flex flex-wrap justify-content-evenly gap-4 p-4">
 
-      <div class="card" style="width: 18rem;">
-        <img src="./images/3d-cartoon-background-children.jpg" class="card-img-top" alt="..."  class="img-hov">
-        <div class="card-body">
-          <h5 class="card-title">Toys , Scientific Games , Puzzles , Blocks and Many More To Explore!!!</h5>
-          <p class="card-text">0-5yrs. <br>Starting From 200/-</p>
-          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
-                </div>
-      </div>
+  <div class="card" style="width: 18rem;" id="drp_mob">
+    <img src="./images/smartphone-8034911_1280.jpg" class="card-img-top img-hov" alt="Smartphone">
+    <div class="card-body">
+      <h5 class="card-title">SmartPhones <br>Samsung, Apple, Micromax, Redmi11..etc</h5>
+      <p class="card-text">Starting From ₹12,999 only</p>
+      <p class="priceofProduct">₹12,345</p>
+      <a href="cart.html" class="btn btn-cart" data-name="SmartPhones" data-price="12345" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+    </div>
+  </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="./images/washing-machine-minimal-laundry-room-interior-design.jpg" class="card-img-top" alt="..." class="img-hov">
-        <div class="card-body">
-          <h5 class="card-title">Washing Machine</h5>
-          <p class="card-text">Samsung ,LG and More... <br>Save Time , Save Money</p>
-          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
-        </div>
-      </div>
+  <div class="card" style="width: 18rem;">
+    <img src="./images/ipad-4080481_1280.png" class="card-img-top img-hov" alt="iPad">
+    <div class="card-body">
+      <h5 class="card-title">iPad</h5>
+      <p class="card-text">Price Drop Alert!!!</p>
+      <p class="priceofProduct">₹29,999</p>
+      <a href="#" class="btn btn-cart" data-name="iPad" data-price="29999" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+    </div>
+  </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="./images/camera-1248682_1280.jpg" class="card-img-top" alt="..." class="img-hov">
-        <div class="card-body">
-          <h5 class="card-title">HD-Cameras</h5>
-          <p class="card-text">Make Your Moment Special... <br>Starting From 10000/-</p>
-          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
-        </div>
-      </div>
+  <div class="card" style="width: 18rem;">
+    <img src="./images/3d-cartoon-background-children.jpg" class="card-img-top img-hov" alt="Toys">
+    <div class="card-body">
+      <h5 class="card-title">Toys, Scientific Games, Puzzles, Blocks and More!</h5>
+      <p class="card-text">0–5 yrs. <br>Starting From ₹200</p>
+      <p class="priceofProduct">₹200</p>
+      <a href="#" class="btn btn-cart" data-name="Toys" data-price="200" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+    </div>
+  </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="./images/flat-lay-wall-clock-still-life.jpg" class="card-img-top" alt="..." class="img-hov">
-        <div class="card-body">
-          <h5 class="card-title">Wall Clock</h5>
-          <p class="card-text">Starting From 599/- only.</p>
-          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
-        </div>
-      </div>
+  <div class="card" style="width: 18rem;">
+    <img src="./images/washing-machine-minimal-laundry-room-interior-design.jpg" class="card-img-top img-hov" alt="Washing Machine">
+    <div class="card-body">
+      <h5 class="card-title">Washing Machine</h5>
+      <p class="card-text">Samsung, LG & more<br>Save Time, Save Money</p>
+      <p class="priceofProduct">₹15,999</p>
+      <a href="#" class="btn btn-cart" data-name="Washing Machine" data-price="15999" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+    </div>
+  </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="./images/hair-care-4541744_1280.jpg" class="card-img-top" alt="..." class="img-hov">
-        <div class="card-body">
-          <h5 class="card-title">Hair Care</h5>
-          <p class="card-text">Add more into your personnel space<br> Starting From 299/- only.</p>
-          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
-        </div>
-      </div>
+  <div class="card" style="width: 18rem;">
+    <img src="./images/camera-1248682_1280.jpg" class="card-img-top img-hov" alt="HD Camera">
+    <div class="card-body">
+      <h5 class="card-title">HD-Cameras</h5>
+      <p class="card-text">Make Your Moments Special...<br>Starting From ₹10,000</p>
+      <p class="priceofProduct">₹10000</p>
+      <a href="#" class="btn btn-cart" data-name="HD-Camera" data-price="10000" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+    </div>
+  </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="./images/kid-6620283_1280.jpg" class="card-img-top" alt="..." class="img-hov" height="300px">
-        <div class="card-body">
-          <h5 class="card-title">Kid's Wear</h5>
-          <p class="card-text">Give Your Baby Your Personnel Touch</p>
-          <a href="./cart.html" class="btn" style="background-color:#211C84; color: yellow;">Add To Cart</a>
-        </div>
-      </div>
+  <div class="card" style="width: 18rem;">
+    <img src="./images/flat-lay-wall-clock-still-life.jpg" class="card-img-top img-hov" alt="Wall Clock">
+    <div class="card-body">
+      <h5 class="card-title">Wall Clock</h5>
+      <p class="card-text">Starting From ₹599 only</p>
+      <p class="priceofProduct">₹599</p>
+      <a href="cart.html" class="btn btn-cart" data-name="Wall Clock" data-price="599" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="./images/hair-care-4541744_1280.jpg" class="card-img-top img-hov" alt="Hair Care">
+    <div class="card-body">
+      <h5 class="card-title">Hair Care</h5>
+      <p class="card-text">Add more into your personal space<br>Starting From ₹299</p>
+      <p class="priceofProduct">₹299</p>
+      <a href="#" class="btn btn-cart" data-name="Hair Care" data-price="299" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="./images/kid-6620283_1280.jpg" class="card-img-top img-hov" alt="Kid's Wear" height="300px">
+    <div class="card-body">
+      <h5 class="card-title">Kid's Wear</h5>
+      <p class="card-text">Give Your Baby Your Personal Touch</p>
+      <p class="priceofProduct">₹799</p>
+      <a href="#" class="btn btn-cart" data-name="Kid's Wear" data-price="799" style="background-color:#211C84; color: yellow;">Add To Cart</a>
+    </div>
+  </div>
+
 </section>
+
 
 <section id="top-selling" class="mt-4">
+  <h3 style="margin-left: 40px;">Products Based On Your Recent Researches</h3>
 
-  <h3 style="margin-left: 40px;">Products Based  On Your Recent Researches</h3>
+  <div id="recentproducts" class="d-flex flex-wrap gap-4 justify-content-center mt-4">
 
-  <div id="recentproducts" class="mt-4">
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <img src="./images/bed.jpg" alt="">
-      <h5 class="card-title">Bedsheets</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">Furnishing Deals</h6>
-      <!-- <a href="#" class="card-link">Card link</a> -->
-      <a href="#" class="card-link">Show More</a>
-    </div>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <img src="./images/tv.jpg" alt="">
-      <h5 class="card-title">Tv's</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">Min 40% off</h6>
-      <p class="card-text">Deals Like Never Before</p>
-      <!-- <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a> -->
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <img src="./images/flight.jpg" alt="">
-      <h5 class="card-title">Book Flights</h5>
-      <h3 class="card-subtitle mb-2 text-body-secondary">Fly for Rs.1299</h3>
-      <button class="btn1">Book Now</button>
+    <div class="card" style="width: 18rem;">
+      <img src="./images/bed.jpg" class="card-img-top" alt="Bedsheets">
+      <div class="card-body">
+        <h5 class="card-title">Bedsheets</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Furnishing Deals</h6>
+        <a href="#" class="card-link">Show More</a>
+      </div>
     </div>
 
-
-  </div>
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <img src="./images/sofa.jpg" alt="">
-      <h5 class="card-title">Sofa</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">From Rs. 17893</h6>
-      <p class="card-text">Flipkart Perfect Home Sofas.</p>
-      <!-- <a href="#" class="card-link">Card link</a> -->
-      <!-- <a href="#" class="card-link">Another link</a> -->
+    <div class="card" style="width: 18rem;">
+      <img src="./images/tv.jpg" class="card-img-top" alt="TV">
+      <div class="card-body">
+        <h5 class="card-title">TVs</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Min 40% off</h6>
+        <p class="card-text">Deals Like Never Before</p>
+      </div>
     </div>
-  </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="./images/flight.jpg" class="card-img-top" alt="Flight Offer">
+      <div class="card-body">
+        <h5 class="card-title">Book Flights</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Fly for ₹1299</h6>
+        <a href="booking.html"><button class="btn btn-primary" >Book Now</button></a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="./images/sofa.jpg" class="card-img-top" alt="Sofa">
+      <div class="card-body">
+        <h5 class="card-title">Sofa</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">From ₹17,893</h6>
+        <p class="card-text">Flipkart Perfect Home Sofas.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
+
+
+
+<!-- more categories -->
 <section class="more-categories">
   <h3 style="margin-left: 40px;">More Categories To Explore</h3>
 
@@ -228,7 +244,7 @@
 <div class="box">
   <img src="./images/ethinic.jpg" alt="">
 </div>
-<div class="box">
+<div class="box" id="drp_makeup">
   <img src="./images/makeuo.jpg" alt="">
 </div>
 <div class="box">
@@ -246,6 +262,7 @@
   </div>
 </section>
 
+<!-- footer -->
 <section id="footer">
   <div class="container">
     <footer class="py-5">
@@ -309,3 +326,4 @@
 <script src="index.js"></script>
 </body>
 </html>
+
